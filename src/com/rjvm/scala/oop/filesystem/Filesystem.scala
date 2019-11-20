@@ -10,7 +10,7 @@ object Filesystem extends App  {
   var state = State(root, root)
   val scanner = new Scanner(System.in)
   while (true){
-    state.show
+    state .show
     val input = scanner.nextLine()
      state = Command.from(input).apply(state)
   }
